@@ -1,1 +1,29 @@
+PYTHON CODE 
+USE OF FUNCTIONS TO FIND LCM 
+Source code:
+
+def lcm(x,y):
+    if x<y:
+        greater=y
+    else:
+        greater=x
+    while(True):
+        
+      if (greater%x==0)and (greater%y==0):
+        LCM=greater
+        break
+      else:
+        greater+=1
+    return LCM
+
+no1=int(input("Enter first number:"))
+no2=int(input("Enter second number:"))
+ans=lcm(no1,no2)
+print("LCM of two numbers is",ans)
+
+Output:
+Enter first number:15
+Enter second number:20
+LCM of two numbers is 60
+
 
